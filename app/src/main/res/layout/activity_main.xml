@@ -1,0 +1,293 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_weight="0"
+        android:paddingTop="18pt"
+        android:text="@string/bscs_047j_2020_mycalaculator"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <!-- My Buttons Layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_weight="0.25"
+        android:orientation="vertical">
+
+        <!-- First Row: Buttons -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <!-- Second Row: Buttons -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+
+            <Button
+                android:id="@+id/buttonDivide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="/"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <!-- Third Row: Buttons -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+
+            <Button
+                android:id="@+id/buttonSubtract"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <!-- Fourth Row: Buttons -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+
+            <Button
+                android:id="@+id/buttonMultiply"
+                android:layout_width="6.5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="*"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/buttonRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Refresh"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/buttonEquals"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="=" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+    <!-- My Input Fields -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <!-- First Row: Input Fields -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Input First Number" />
+
+                <EditText
+                    android:id="@+id/editTextFirstNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Input First Number"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Operator" />
+
+                <EditText
+                    android:id="@+id/editTextOperator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Operation"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </TableRow>
+
+            <!-- Second Row: Input Fields -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Input Second Number" />
+
+                <EditText
+                    android:id="@+id/editTextSecondNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Input Second Number"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Answer" />
+
+                <EditText
+                    android:id="@+id/editTextAnswer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Solution"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
