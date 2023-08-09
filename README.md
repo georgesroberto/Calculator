@@ -1,6 +1,6 @@
 # Simple Android Calculator
 
-## App Preview
-<img src="Preview.png" alt="Emulator Image" />
+## Preview
+<img src="Preview.png" alt="Emulator Image" contain/>
 
 ### Developed using Java
